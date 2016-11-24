@@ -1,0 +1,414 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: auto;
+  min-height: 100vh;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 10px;
+  font-family: 'Baloo Paaji', cursive;
+  background-image: url(../img/restaurant_icons.png);
+}
+.panel{
+  display: block!important;
+}
+footer {
+background-color: #2b8c47;
+height: 20%;
+overflow: hidden;
+width: 100%;
+text-align: center;
+}
+
+.twitter{
+  height: 32px;
+  width: 32px;
+}
+
+.instagram{
+  height: 32px;
+  width: 32px;
+}
+
+.face{
+  height: 32px;
+  width: 32px;
+}
+
+.ion-android-mail{
+  font-size: 15px;
+}
+
+.ion-ios-telephone{
+  font-size: 15px;
+}
+
+.ion-android-pin{
+  font-size: 15px;
+}
+
+
+.infoContacto a {
+  color: black;
+}
+
+.toggle-nav,
+.cart-look {
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100%;
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.sello {
+  width: 15%;
+  float: left;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.option-rigth {
+  float: right;
+  margin: 10px 15px;
+  font-size: 1.3em;
+  color: #2B8C47;
+  text-align: right;
+}
+
+.option-rigth a {
+  color: #2B8C47;
+}
+
+.cart-look {
+  margin-top: 10px;
+}
+
+.cart-look a {
+  margin: 10px;
+  font-size: 1.5em;
+}
+
+.number-price {
+  font-size: 1em;
+}
+
+.banner {
+  background-image: url(../img/organic-food.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100% auto;
+  height: 160px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  clear: both;
+}
+
+.titulo {
+  display: inline-block;
+  text-align: right;
+  transform: rotate(-10deg);
+  margin-top: -10px;
+}
+
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 6em;
+  margin: 14px;
+  color: #D0E59D;
+  line-height: 1.2em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.toggle-nav {
+  display: block;
+  width: 40px;
+  background-color: #2B8C47;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.main-nav {
+  margin: 30px 0;
+  width: 100%;
+  z-index: 5;
+  display: none;
+  position: absolute;
+  top: 70%;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  background-color: #2B8C47;
+  color: white;
+  font-size: 1.3em;
+  padding: 1em;
+  display: block;
+  text-transform: uppercase;
+  border-bottom: solid 1px white;
+}
+
+.presentacion {
+  text-align: center;
+  padding: 20px;
+}
+
+.presentacion h2 {
+  font-size: 3em;
+  margin: 0px;
+  color: rgb(48, 47, 47);
+}
+
+.presentacion h2:nth-child(2) {
+    margin: 0px;
+    color: rgb(43, 140, 71);
+}
+
+.presentacion p {
+  font-size: 1.5em;
+  font-style: italic;
+  color: #777373;
+  font-weight: bold;
+}
+
+.main-categories {
+  margin-top: 38px;
+}
+
+/*.main-categories img{
+  width: 100px;
+  border-radius: 50%;
+}*/
+
+.main-categories article {
+  width: 33.333333333%;
+  height: 190px;
+  float: left;
+  text-align: center;
+}
+
+.main-categories h2 {
+  margin: 0;
+  color: #D0E59D;
+  transform: rotate(-54deg);
+  margin-top: 90px;
+  font-size: 2.5em;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+.fruit-img-categories {
+  background-image: url(../img/fruit.jpg);
+  background-size: 300%;
+  background-repeat: no-repeat;
+  background-position: 54% 95%;
+}
+
+.vegetable-img-categories {
+  background-image: url(../img/vegetables1.jpg);
+  background-size: 307%;
+  background-repeat: no-repeat;
+  background-position: 22% 86%;
+}
+
+.cereals-img-categories {
+  background-image: url(../img/cereals.jpg);
+  background-size: 300%;
+  background-repeat: no-repeat;
+  background-position: 35%;
+}
+
+.clear {
+  clear: both;
+}
+
+.presentacion-productos {
+  text-align: center;
+  margin: 30px 0px;
+  font-size: 2em;
+  line-height: 1.5em;
+  background-color: rgba(43, 140, 71, 0.52);
+  color: white;
+}
+
+img {
+  width: 100%;
+}
+
+.vip-products .product {
+  width: 80%;
+  margin: 10%;
+  background-color: white;
+  text-align: center;
+}
+
+.precio h4 {
+  font-size: 2.5em;
+  margin: 0px;
+}
+.precio p {
+  font-size: 1.7em;
+}
+
+.button-cart{
+  background-color: rgb(43, 140, 71);
+  height: 38px;
+  vertical-align: middle;
+  font-size: 2em;
+  color: white;
+}
+
+.vip-products .product:last-child {
+  margin-bottom: 80px;
+}
+
+.pie {
+  background-color: rgb(43, 140, 71);
+  width: 100%;
+  clear: both;
+  height: 200px;
+}
+
+@media (min-width: 600px) {
+
+  header {
+    margin-bottom: 70px;
+  }
+
+  .sello {
+    width: 10%;
+    margin: 3px 0 38px;
+  }
+
+  .toggle-nav {
+    display: none;
+  }
+
+  .main-nav {
+    display: inline-block;
+    margin: 0;
+    position: static;
+  }
+
+  .main-nav a {
+    width: 16.666666667%;
+    float: left;
+    border-right: 1px solid white;
+    padding: 0.7em;
+  }
+
+  .banner{
+    height: 300px;
+  }
+
+  h1 {
+    font-size: 10em;
+  }
+
+  .presentacion {
+    width: 50%;
+    margin-left: 25%;
+  }
+
+  .main-categories article {
+    width: 25%;
+    margin-left: 6.25%;
+    border: solid 2px #2b8c47;
+    border-radius: 15px;
+  }
+
+  .main-categories h2 {
+    font-size: 3em;
+    margin-top: 73px;
+  }
+
+  .product img {
+    height: 188px;
+  }
+
+  .vip-products .product {
+    margin: 0;
+    width: 32.5%;
+    margin-left: 11.66666666666666666667%;
+    margin-top: 5%;
+    float: left;
+  }
+
+  .infoContacto{
+  float: left;
+  width: 30%;
+  margin-left: 1.6666%;
+  margin-right: 1.6666%;
+  text-align: center;
+  }
+
+
+  .infogeneral{
+  float: left;
+  width: 30%;
+  margin-left: 1.6666%;
+  margin-right: 1.6666%;
+  }
+
+  .Newsletter{
+  float: left;
+  width: 30%;
+  margin-left: 1.6666%;
+  margin-right: 1.6666%;
+  text-align: center;
+  }
+
+  .Newslettercaja{
+  margin-bottom: 5px;
+  }
+
+}
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .sello {
+    width: 9%;
+  }
+
+
+  h1 {
+    font-size: 13em;
+  }
+
+  .vip-products .product {
+    width: 23%;
+    margin-left: 7.75%;
+  }
+
+}

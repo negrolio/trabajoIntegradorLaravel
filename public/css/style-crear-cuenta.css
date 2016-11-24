@@ -1,0 +1,245 @@
+@import 'https://fonts.googleapis.com/css?family=Indie+Flower';
+
+* {
+  box-sizing: border-box;
+}
+
+
+.form {
+  text-align: center;
+}
+
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  margin: 0;
+  font-size: 10px;
+  font-family: 'Baloo Paaji', cursive;
+  background-image: url(../img/restaurant_icons.png);
+}
+
+.popup {
+  width: 200px;
+  height: 200px;
+  background-color: #2b8c47;
+  color: white;
+  font-size: 2.5em;
+  border-radius: 10px;
+  border: 1px white solid;
+  position: fixed;
+  top: 37%;
+  right: 43%;
+  display: none;
+}
+
+form span {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.toggle-nav,
+.cart-look {
+  font-family: sans-serif;
+}
+
+.number-price {
+  font-size: 1em;
+}
+
+.sello {
+  width: 15%;
+  float: left;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.toggle-nav {
+  display: block;
+  width: 40px;
+  background-color: #2B8C47;
+  margin: auto;
+  padding: 10px;
+  color: white;
+  font-size: 2.5em;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.main-nav {
+  margin: 30px 0;
+  width: 100%;
+  z-index: 5;
+  display: none;
+  position: absolute;
+  top: 70%;
+}
+
+.main-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-nav a {
+  text-decoration: none;
+  background-color: #2B8C47;
+  color: white;
+  font-size: 1.3em;
+  padding: 1em;
+  display: block;
+  text-transform: uppercase;
+  border-bottom: solid 1px white;
+}
+
+.banner {
+  background-image: url(../img/organic-food.jpg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 100% auto;
+  height: 160px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  clear: both;
+}
+.titulo {
+  padding: 20px;
+}
+h1 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 3em;
+  margin: 0;
+  color: #D0E59D;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+.container{
+  max-width: 1200px;
+  height: 100%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+header {
+  margin-bottom: 30px;
+}
+
+.option-rigth {
+  float: right;
+  margin: 10px 15px;
+  font-size: 1.3em;
+  color: #2B8C47;
+  text-align: right;
+}
+
+.option-rigth a {
+  color: #2B8C47;
+}
+
+.cart-look {
+  margin-top: 10px;
+}
+
+.cart-look a {
+  margin: 10px;
+  font-size: 1.5em;
+}
+
+.twitter{
+  height: 32px;
+  width: 32px;
+}
+
+.instagram{
+  height: 32px;
+  width: 32px;
+}
+
+.ion-android-mail{
+  font-size: 15px;
+}
+
+.ion-ios-telephone{
+  font-size: 15px;
+}
+
+.ion-android-pin{
+  font-size: 15px;
+}
+
+
+.infoContacto a {
+  color: black;
+}
+
+@media (min-width:600px){
+
+  .sello {
+    width: 10%;
+  }
+
+  .toggle-nav {
+    display: none;
+  }
+
+  .main-nav {
+      display: inline-block;
+      margin: 0;
+      position: static;
+    }
+
+    .main-nav a {
+      width: 16.666666667%;
+      float: left;
+      border-right: 1px solid white;
+      padding: 0.7em;
+    }
+
+    .banner{
+      height: 120px;
+    }
+
+    h1 {
+      font-size: 5em;
+    }
+
+.infoContacto{
+float: left;
+width: 30%;
+margin-left: 1.6666%;
+margin-right: 1.6666%;
+text-align: center;
+}
+
+
+.infogeneral{
+float: left;
+width: 30%;
+margin-left: 1.6666%;
+margin-right: 1.6666%;
+}
+
+.Newsletter{
+float: left;
+width: 30%;
+margin-left: 1.6666%;
+margin-right: 1.6666%;
+text-align: center;
+}}
+
+.Newslettercaja{
+margin-bottom: 50px;
+}
+
+@media (min-width:900px) {
+  .sello {
+    width: 9%;
+  }
+}
