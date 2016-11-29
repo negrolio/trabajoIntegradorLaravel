@@ -21,6 +21,7 @@ Route::get('/login', 'PagesController@showLogin')->name('login');
 Route::get('/register', 'PagesController@showRegister')->name('register');
 Route::get('/products', 'ProductsController@showProducts')->name('products');
 Route::get('/admin', 'PagesController@showAdmin')->name('admin');
+Route::get('/create-product', 'PagesController@showCreateProduct')->name('createProduct');
 
 Auth::routes();
 

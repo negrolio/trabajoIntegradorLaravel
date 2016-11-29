@@ -5,7 +5,7 @@
   @if (Auth::check())
 
     @if (Auth::user()->super_admin == 1)
-      <a href="#"><button class="btn" type="button" name="button">Agregar Producto</button></a>
+      <a href="{{route('createProduct')}}"><button class="btn" type="button" name="button">Agregar Producto</button></a>
       <a href="#"><button class="btn" type="button" name="button">Editar/Borrar</button></a>
     @else
       <div class="alert alert-danger" role="alert">

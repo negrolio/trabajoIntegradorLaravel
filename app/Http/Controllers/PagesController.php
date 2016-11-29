@@ -15,6 +15,9 @@ class PagesController extends Controller
     public function showAdmin(){
       return view('pages.admin');
     }
+    public function showCreateProduct(){
+      return view('pages.createProduct');
+    }
     // public function showLogin(){
     //   return view('pages/login');
     // }
