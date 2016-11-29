@@ -12,9 +12,10 @@
               </button>
 
               <!-- Branding Image -->
-              <a class="navbar-brand" href="{{ url('/') }}">
+              {{-- <a class="navbar-brand" href="{{ url('/') }}">
                   {{ config('app.name', 'Laravel') }}
-              </a>
+              </a> --}}
+              <img src="/img/sello.jpg" alt="sello-confiable" class="sello" />
           </div>
 
           <div class="collapse navbar-collapse" id="app-navbar-collapse">
@@ -55,9 +56,7 @@
       </div>
   </nav>
 
-  <img src="/img/sello.jpg" alt="sello-confiable" class="sello" />
-
-  <div class="option-rigth">
+  {{-- <div class="option-rigth">
     <div class="registro">
       <a href="{{route('login')}}">Login</a> |
       <a href="{{route('register')}}">Registrarse</a>
@@ -73,7 +72,7 @@
         <span class="ion-android-search"></span>
       </a>
     </div>
-  </div>
+  </div> --}}
 
   <nav class="main-nav">
     <ul>

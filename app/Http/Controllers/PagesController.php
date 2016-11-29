@@ -12,8 +12,8 @@ class PagesController extends Controller
     public function showFaq(){
       return view('pages/faq');
     }
-    public function showProducts(){
-      return view('pages.products');
+    public function showAdmin(){
+      return view('pages.admin');
     }
     // public function showLogin(){
     //   return view('pages/login');

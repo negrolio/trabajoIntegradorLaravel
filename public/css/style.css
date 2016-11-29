@@ -16,15 +16,42 @@ body {
   font-family: 'Baloo Paaji', cursive;
   background-image: url(../img/restaurant_icons.png);
 }
+
+.navbar {
+  margin: 0;
+}
+
 .panel{
   display: block!important;
 }
+
 footer {
-background-color: #2b8c47;
-height: 20%;
-overflow: hidden;
-width: 100%;
-text-align: center;
+  background-color: #2b8c47;
+  height: 20%;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+}
+
+button.btn {
+  background-color: #2b8c47;
+  border-color: #2b8c47;
+  color: white;
+}
+a.btn{
+  color: #2b8c47;
+}
+button.btn:hover {
+  background-color: white;
+  color: #2b8c47;
+  border-color: #2b8c47;
+}
+a.btn:hover {
+  color: #d0e59d;
+}
+
+.form-control:focus {
+  border-color: #4caf50;
 }
 
 .twitter{
@@ -398,7 +425,10 @@ img {
   }
 
   .sello {
-    width: 9%;
+    width: 7%;
+    position: absolute;
+    top: 46%;
+    left: -2%;
   }
 
 

@@ -1,4 +1,4 @@
-@extends('htmlBase')
+@extends('components.htmlBase')
 
 @section('page')
 <div class="container">

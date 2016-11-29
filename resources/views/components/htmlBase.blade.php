@@ -8,8 +8,9 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Orgnic Food') }}</title>
+    <title>@yield('title','Organic Food')</title>
 
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="/css/app.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/faq-style.css">
@@ -30,9 +31,9 @@
   </head>
   <body>
     <div class="container">
-      @include('header')
+      @include('components.header')
       @yield('page')
-      @include('footer')
+      @include('components.footer')
 
     </div>
   </body>

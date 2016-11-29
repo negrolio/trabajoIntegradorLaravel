@@ -25,6 +25,26 @@ text-align: center;
 margin-top: 30px;
 }
 
+button.btn {
+  background-color: #2b8c47;
+  border-color: #2b8c47;
+}
+a.btn{
+  color: #2b8c47;
+}
+button.btn:hover {
+  background-color: white;
+  color: #2b8c47;
+  border-color: #2b8c47;
+}
+a.btn:hover {
+  color: #d0e59d;
+}
+
+.form-control:focus {
+  border-color: #4caf50;
+}
+
 .twitter{
   height: 32px;
   width: 32px;
@@ -75,12 +95,6 @@ a {
   text-decoration: none;
 }
 
-.sello {
-  width: 15%;
-  float: left;
-  border-radius: 50%;
-  margin: 10px;
-}
 
 .option-rigth {
   float: right;
@@ -316,12 +330,6 @@ div.panel.show {
   margin-bottom: 5px;
   }
 
-
-  .sello {
-    width: 10%;
-    margin: 3px 0 38px;
-  }
-
   .toggle-nav {
     display: none;
   }
@@ -368,18 +376,8 @@ div.panel.show {
 
 }
 
-@media (min-width: 900px) {
-  .container {
-    max-width: 1200px;
-    margin: auto;
-  }
 
-  .sello {
-    width: 9%;
-  }
 
-  .main-nav {
-    top: 22%;
 
-  }
+
 }
