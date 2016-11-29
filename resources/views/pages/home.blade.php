@@ -21,7 +21,7 @@
   </section>
 
   <div class="presentacion-productos">
-    <h2>Destacados de la semana</h2>
+    <h2>Destacados de la semana!</h2>
   </div>
 
   <section class="vip-products">
