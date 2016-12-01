@@ -2,17 +2,13 @@
 
 @section('page')
 
-  @if (session('success_message'))
-    <div class="alert alert-success">
-      {{session('success_message')}}
-    </div>
-  @endif
-
   @if (Auth::check())
 
     @if (Auth::user()->super_admin == 1)
-      <a href="{{route('createProduct')}}"><button class="btn" type="button" name="button">Agregar Producto</button></a>
-      <a href="{{route('edit')}}"><button class="btn" type="button" name="button">Editar/Borrar</button></a>
+
+      <h3>Editar nuevo producto</h3>
+      @include('pages.editForm')
+
     @else
       <div class="alert alert-danger" role="alert">
         <span class="sr-only">Error:</span>
@@ -23,5 +19,6 @@
   @else
     @include('auth.components.login')
   @endif
+
 
 @endsection

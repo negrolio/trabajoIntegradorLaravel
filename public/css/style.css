@@ -54,6 +54,16 @@ a.btn:hover {
   border-color: #4caf50;
 }
 
+.list-product-admin {
+  width: 30%;
+}
+.list-product-admin img {
+  width: 10%;
+}
+
+
+
+
 .twitter{
   height: 32px;
   width: 32px;
@@ -440,5 +450,7 @@ img {
     width: 23%;
     margin-left: 7.75%;
   }
+
+
 
 }

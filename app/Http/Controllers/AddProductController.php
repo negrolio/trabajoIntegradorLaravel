@@ -17,9 +17,8 @@ class AddProductController extends Controller
       $product->price = $request->price;
       $product->img_url = $request->img_url;
 
-      if($request->hasFile('img_url')) {
-        $this->storeAvatar($product);
-      }
+      $this->storeAvatar($product,$request);
+
 
       $product->save();
 
@@ -29,19 +28,24 @@ class AddProductController extends Controller
 
     //Lógica para almacenar las imagenes
 
-    protected function storeAvatar($product) {
+    protected function storeAvatar($product,$request) {
 
+
+      if($request->hasFile('img_url')) {
+        $this->removeAvatarIfExists($product->img_url);
         $newFilename = uniqid().".".$product->img_url->extension();
         $folder = "img";
         $path = $product->img_url->storeAs($folder, $newFilename, 'public');
         $product->img_url = "/".$folder."/".$newFilename;
+      }
 
     }
 
-    // protected function removeAvatarIfExists($product) {
-   // 	  if($product->image) {
-    //
-   // 		Storage::disk('public')->delete($product->image);
-   // 	  }
-    // }
+
+    protected function removeAvatarIfExists($product) {
+   	  if($product) {
+
+   		Storage::disk('public')->delete($product);
+   	  }
+    }
 }
