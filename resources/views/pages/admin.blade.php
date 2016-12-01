@@ -2,6 +2,12 @@
 
 @section('page')
 
+  @if (session('success_message'))
+    <div class="alert alert-success">
+      {{session('success_message')}}
+    </div>
+  @endif
+  
   @if (Auth::check())
 
     @if (Auth::user()->super_admin == 1)
