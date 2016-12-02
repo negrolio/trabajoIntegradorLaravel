@@ -2,23 +2,43 @@
 
 @section('page')
 
-  <div class="containerProduct">
+  <div id="catalogCarousel" class="containerProducts carousel slide" data-ride="carousel" data-interval="false">
 
-  @foreach ($products as $product)
-    <article class="product">
-      <img src="/storage/{{$product->img_url}}" alt="{{$product->title}}">
-      <div class="precio">
-        <h4>{{$product->title}}</h4>
-        <p>${{$product->price}}</p>
+      <div class="carousel-inner" role="listbox">
+
+        {{-- {{dd($products->chunk(6))}} --}}
+        @foreach ($products->chunk(6) as $someProducts)
+            <div class="item @if ($loop->first) active @endif" >
+
+              @foreach ($someProducts as $product)
+                <article class="product">
+                  <img src="/storage/{{$product->img_url}}" alt="{{$product->title}}">
+                  <div class="precio">
+                    <h4>{{$product->title}}</h4>
+                    <p>${{$product->price}}</p>
+                  </div>
+                  <div class="button-cart">
+                    <span class="ion-ios-cart"></span>
+                    ADD TO CART
+                  </div>
+                </article>
+              @endforeach
+
+            </div>
+        @endforeach
       </div>
-      <div class="button-cart">
-        <span class="ion-ios-cart"></span>
-        ADD TO CART
-      </div>
-    </article>
-  @endforeach
+
+      <ol>
+        @for ($i=0; $i < $products->count()/6 ; $i++)
+          <button class="button-catalogo-page" data-target="#catalogCarousel" data-slide-to="{{$i}}">
+            {{$i + 1}}
+          </button>
+        @endfor
+      </ol>
+
+    </div>
 
 
-</div>
+
 
 @endsection

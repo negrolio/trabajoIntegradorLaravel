@@ -16,7 +16,7 @@ class ProductTableSeeder extends Seeder
         $price = 12.99;
         $imgUrl = "/img/banana.jpg";
 
-        for ($i=0; $i < 20 ; $i++) {
+        for ($i=0; $i < 6 ; $i++) {
           $newProduct = new Product;
           $newProduct->title = $title.$i;
           $newProduct->price = $price;
