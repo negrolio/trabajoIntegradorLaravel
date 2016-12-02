@@ -20,6 +20,7 @@ class CreateProductTable extends Migration
             $table->string('title');
             $table->string('price');
             $table->string('img_url');
+            $table->text('description')->nullable();
         });
     }
 

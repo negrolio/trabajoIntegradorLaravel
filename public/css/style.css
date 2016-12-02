@@ -84,6 +84,22 @@ th {
   color: white;
 }
 
+.container-product {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0 15%;
+}
+.container-product img {
+  width: 30%;
+}
+.product:hover{
+  border: 2px solid green;
+  height: 285px;
+}
+.product a:hover{
+  text-decoration: none;
+}
+
 
 
 

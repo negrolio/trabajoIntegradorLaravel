@@ -31,6 +31,11 @@
 			          <input type="file" name="img_url" class="form-control">
 			        </div>
 
+							<div class="form-group">
+								<label for="text_area">Descripcion</label>
+								<textarea name="text_area" rows="8" cols="40"></textarea>
+							</div>
+
 			        <input type="submit" value="Guardar" class="btn btn-info">
 			    </form>
 			  </div>

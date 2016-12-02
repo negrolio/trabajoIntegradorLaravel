@@ -20,6 +20,7 @@ Route::get('/faq', 'PagesController@showFaq')->name('faq');
 Route::get('/login', 'PagesController@showLogin')->name('login');
 Route::get('/register', 'PagesController@showRegister')->name('register');
 Route::get('/products', 'ProductsController@showProducts')->name('products');
+Route::get('/product/{id}', 'ProductsController@showProduct')->name('product');
 Route::get('/admin', 'PagesController@showAdmin')->name('admin');
 Route::get('/create-product', 'PagesController@showCreateProduct')->name('createProduct');
 Route::post('/create-product', 'AddProductController@addProduct')->name('addProduct');
