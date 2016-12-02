@@ -14,7 +14,7 @@
 
         <div class="form-group">
            <label for="price">Precio</label> <br>
-          <input type="number" name="price" class="form-control" value="{{$product->price}}">
+          <input type="number" name="price" class="" value="{{$product->price}}">
         </div>
 
       <div class="form-group">

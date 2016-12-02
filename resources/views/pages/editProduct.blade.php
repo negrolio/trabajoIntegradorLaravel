@@ -6,7 +6,7 @@
 
     @if (Auth::user()->super_admin == 1)
 
-      <h3>Editar nuevo producto</h3>
+      <h3>Editar producto</h3>
       @include('pages.editForm')
 
     @else
