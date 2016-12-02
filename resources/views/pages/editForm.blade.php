@@ -2,7 +2,7 @@
   <div class="row">
 
 
-    <form class="form-horizontal" action="{{route('addProduct')}}" method="POST" enctype="multipart/form-data" id="form">
+    <form class="form-horizontal" action="{{route('editarProducto', $product->id)}}" method="POST" enctype="multipart/form-data" id="form">
       {{ csrf_field() }}
 
 
