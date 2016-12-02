@@ -13,7 +13,12 @@
             <li class="list-group-item"><h3>{{$product->title}}</h3></li>
             <li class="list-group-item"><p>{{$product->price}}</p></li>
             <img src="/storage/{{$product->img_url}}" alt="" />
+
             <a href="{{route('editProduct',$product->id)}}"><button type="button" name="button">Editar</button></a>
+            <form class="" action="{{route('eraser',$product->id)}}" method="post">
+              {{ csrf_field() }}
+              <input type="submit" name="submit" value="Borrar">
+            </form>
           </div>
         @endforeach
       </ul>

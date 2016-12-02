@@ -26,4 +26,12 @@ class ProductsController extends Controller
 
       return view('pages.editProduct')->with('product',$product);
     }
+
+    public function eraser($id){
+
+      $product = Product::find($id);
+      $product->delete();
+
+      return redirect()->route('edit');
+    }
 }

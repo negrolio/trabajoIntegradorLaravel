@@ -25,6 +25,7 @@ Route::get('/create-product', 'PagesController@showCreateProduct')->name('create
 Route::post('/create-product', 'AddProductController@addProduct')->name('addProduct');
 Route::get('/edit', 'ProductsController@showProductsToEdit')->name('edit');
 Route::get('/product-edit/{id}', 'ProductsController@showProductToEdit')->name('editProduct');
+Route::post('/erase/{id}', 'ProductsController@eraser')->name('eraser');
 
 Auth::routes();
 
