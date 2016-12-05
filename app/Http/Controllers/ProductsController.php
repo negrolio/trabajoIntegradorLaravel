@@ -14,6 +14,11 @@ class ProductsController extends Controller
       return view('pages.products')->with('products',$products);
     }
 
+    public function showProduct($id){
+      $product = Product::find($id);
+      return view('pages.product')->with('product',$product);
+    }
+
     public function showProductsToEdit(){
       $products = Product::all();
       // dd($products);

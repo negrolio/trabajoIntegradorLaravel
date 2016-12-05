@@ -12,11 +12,13 @@
 
               @foreach ($someProducts as $product)
                 <article class="product">
-                  <img src="/storage/{{$product->img_url}}" alt="{{$product->title}}">
-                  <div class="precio">
-                    <h4>{{$product->title}}</h4>
-                    <p>${{$product->price}}</p>
-                  </div>
+                  <a href="{{route('product',$product->id)}}">
+                    <img src="/storage/{{$product->img_url}}" alt="{{$product->title}}">
+                    <div class="precio">
+                      <h4>{{$product->title}}</h4>
+                      <p>${{$product->price}}</p>
+                    </div>
+                  </a>
                   <div class="button-cart">
                     <span class="ion-ios-cart"></span>
                     ADD TO CART
