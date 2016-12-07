@@ -1,6 +1,6 @@
 <footer>
   <div class="infogeneral">
-    <p>
+    <p style="color:#fff; font-size:12px;"> <br>
       Somos alimentos orgánicos !
 
       Nos hemos especializado en el suministro de alimentos / productos orgánicos , producidos por los agricultores locales en todo el país .
@@ -9,27 +9,27 @@
     </p>
   </div>
 
-  <div class="infoContacto">
+  <div class="infoContacto"> <br>
 
-    <p>Información de contacto
+    <p style="color:#fff; font-size:12px;">Información de contacto
       <br> <br>
       <span class="ion-android-mail"></span>
-      <a href="contacto@organicfood.com"> contacto@organicfood.com</a>.
+      <a href="contacto@organicfood.com" style="color:#fff;"> contacto@organicfood.com</a>.
       <br><br>
       <span class="ion-ios-telephone"></span>
-      <a href="#">113 442 3545</a>
+      <a href="#" style="color:#fff;">113 442 3545</a>
       <br><br>
       <span class="ion-android-pin"></span>
-      <a href="#"> Avenida Siempre Viva 742 </a>
+      <a href="#" style="color:#fff;"> Avenida Siempre Viva 742 </a>
     </p>
   </div>
 
-  <div class="Newsletter">
-    <p>
+  <div class="Newsletter"> <br>
+    <p style="color:#fff; font-size:12px;">
       <a href="#"><img src="/img/1472731849_square-facebook.svg" alt="" class="face" /></a>
       <a href="#"><img src="/img/social-instagram-new-square2-128.png" alt="" class="instagram"/></a>
       <a href="#"><img src="/img/twitter-128.png" alt="" class="twitter"/></a>
-      <br>
+      <br> <br>
       REGISTRATE
       <br>
       Recibí novedades en tu Email!

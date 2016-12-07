@@ -20,6 +20,7 @@ class EditProductController extends Controller{
     $product->fill([
       'title' => $request->title,
       'price' => $request->price,
+      'description' => $request->description,
       // 'img_url' => $request->img_url,
     ]);
 

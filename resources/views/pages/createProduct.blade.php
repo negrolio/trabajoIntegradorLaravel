@@ -32,11 +32,12 @@
 			        </div>
 
 							<div class="form-group">
-								<label for="text_area">Descripcion</label>
-								<textarea name="text_area" rows="8" cols="40"></textarea>
+								<label for="text_area">Descripción</label>
+								<br>
+								<textarea name="description" rows="8" cols="40"></textarea>
 							</div>
 
-			        <input type="submit" value="Guardar" class="btn btn-info">
+			        <button type="submit" class="btn btn-primary">Guardar</button>
 			    </form>
 			  </div>
 			</div>

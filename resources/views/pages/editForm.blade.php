@@ -22,7 +22,13 @@
           <input type="file" name="img_url" class="form-control">
       </div>
 
-        <input type="submit" value="Guardar" class="btn btn-info">
+      <div class="form-group">
+        <label for="text_area">Descripción</label>
+        <br>
+        <textarea name="description" rows="8" cols="40">{{$product->description}}</textarea>
+      </div>
+
+        <button type="submit" class="btn btn-primary">Guardar</button>
 
         @if($product->img_url)
 		      	<div style="margin-top:20px; margin-bottom:20px; text-align:center">

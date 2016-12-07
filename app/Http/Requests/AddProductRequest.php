@@ -25,6 +25,7 @@ class AddProductRequest extends FormRequest {
         return [
             'title' => 'required',
             'price' => 'required',
+            // 'description' =>'required',
             'img_url' => 'image|mimes:jpeg,bmp,png|max:512',
         ];
     }

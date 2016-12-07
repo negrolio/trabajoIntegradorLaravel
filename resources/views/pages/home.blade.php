@@ -3,19 +3,19 @@
 @section('page')
 
   <section class="presentacion">
-    <h2>Welcome to</h2><h2> Organic Food</h2>
-    <p> Nos hemos especializado en el suministro de alimentos / productos orgánicos , producidos por los agricultores locales en todo el país.</p>
+    <h2>Bienvenidos a</h2><h2> Organic Food</h2>
+    <p> Nos hemos especializado en el suministro de alimentos / productos orgánicos, producidos por agricultores locales de todo el país.</p>
   </section>
 
   <section class="main-categories">
     <article class="fruit-img-categories">
-      <h2>Fruits</h2>
+      <h2>Frutas</h2>
     </article>
     <article class="vegetable-img-categories">
-      <h2>Vegetable</h2>
+      <h2>Vegetales</h2>
     </article>
     <article class="cereals-img-categories">
-      <h2>Cereals</h2>
+      <h2>Cereales</h2>
     </article>
     <div class="clear"></div>
   </section>
@@ -28,7 +28,7 @@
     <article class="product">
       <img src="/img/apple.jpg" alt="apple">
       <div class="precio">
-        <h4>Apple</h4>
+        <h4>Manzana</h4>
         <p>$8.90</p>
       </div>
       <div class="button-cart">
@@ -52,7 +52,7 @@
     <article class="product">
       <img src="/img/papas.jpg" alt="apple">
       <div class="precio">
-        <h4>Potato</h4>
+        <h4>Papas</h4>
         <p>$2.74</p>
       </div>
       <div class="button-cart">
