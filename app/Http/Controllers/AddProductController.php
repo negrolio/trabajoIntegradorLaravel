@@ -16,7 +16,7 @@ class AddProductController extends Controller
       $product->title = $request->title;
       $product->price = $request->price;
       $product->img_url = $request->img_url;
-      $product->description = $request->text_area;
+      $product->description = $request->description;
 
       $this->storeAvatar($product,$request);
 
