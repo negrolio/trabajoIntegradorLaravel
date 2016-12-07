@@ -256,21 +256,20 @@ h1 {
 }
 
 
-button.accordion {
+.accordion {
     font-family:Arial, Helvetica, sans-serif;
     margin:0 auto;
     font-size:14px;
     border:1px solid #542437;
     border-radius:10px;
-    max-width: 600px;
     padding:10px;
     background:#fff;
     float: left;
 }
 
-button.accordion {
+.accordion {
     background-color: #2B8C47;
-    color: #444;
+    color: #f5f5f5;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -281,8 +280,8 @@ button.accordion {
     transition: 0.4s;
 }
 
-button.accordion.active, button.accordion:hover {
-    background-color: green;
+.accordion.active, .accordion:hover {
+    background-color: rgba(43, 140, 71, 0.81);
 }
 
 div.panel {

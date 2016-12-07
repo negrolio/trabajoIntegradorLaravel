@@ -17,9 +17,8 @@
     <link rel="stylesheet" href="/css/products.css">
     <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Paaji|Indie+Flower" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="/js/app.js" charset="utf-8"  type="text/javascript"></script>
-    {{-- <script src="/js/utilidades.js" charset="utf-8"  type="text/javascript"></script>
-    <script src="/js/register.js" charset="utf-8"  type="text/javascript"></script> --}}
     <script src="/js/main.js" charset="utf-8"  type="text/javascript"></script>
     <!-- Scripts -->
     <script>

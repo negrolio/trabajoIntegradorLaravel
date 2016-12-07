@@ -21,9 +21,9 @@ body {
   margin: 0;
 }
 
-.panel{
+/*.panel{
   display: block!important;
-}
+}*/
 
 footer {
   background-color: #2b8c47;
@@ -93,8 +93,8 @@ th {
   width: 30%;
 }
 .product:hover{
-  border: 2px solid green;
-  height: 285px;
+  box-shadow: 0 0 6px #2b8c47;
+  cursor: pointer;
 }
 .product a:hover{
   text-decoration: none;
