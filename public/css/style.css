@@ -21,9 +21,9 @@ body {
   margin: 0;
 }
 
-/*.panel{
+.panel{
   display: block!important;
-}*/
+}
 
 footer {
   background-color: #2b8c47;
@@ -321,6 +321,12 @@ h1 {
   background-position: 35%;
 }
 
+.fruit-img-categories:hover,
+.vegetable-img-categories:hover,
+.cereals-img-categories:hover {
+  box-shadow: 0 0 60px #2b8c47;
+  cursor: pointer;
+}
 .clear {
   clear: both;
 }

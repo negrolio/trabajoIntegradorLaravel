@@ -21,6 +21,7 @@ class CreateProductTable extends Migration
             $table->string('price');
             $table->string('img_url');
             $table->text('description')->nullable();
+            $table->string('category')->nullable();
         });
     }
 

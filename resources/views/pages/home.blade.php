@@ -8,15 +8,25 @@
   </section>
 
   <section class="main-categories">
-    <article class="fruit-img-categories">
-      <h2>Frutas</h2>
-    </article>
-    <article class="vegetable-img-categories">
-      <h2>Vegetales</h2>
-    </article>
-    <article class="cereals-img-categories">
-      <h2>Cereales</h2>
-    </article>
+
+    <a href="{{route('fruits')}}">
+      <article class="fruit-img-categories">
+        <h2>Frutas</h2>
+      </article>
+    </a>
+
+    <a href="{{route('vegetables')}}">
+      <article class="vegetable-img-categories">
+        <h2>Vegetales</h2>
+      </article>
+    </a>
+
+    <a href="{{route('cereals')}}">
+      <article class="cereals-img-categories">
+        <h2>Cereales</h2>
+      </article>
+    </a>
+    
     <div class="clear"></div>
   </section>
 
@@ -25,7 +35,25 @@
   </div>
 
   <section class="vip-products">
-    <article class="product">
+
+    @foreach ($products as $product)
+      <article class="product">
+        <a href="{{route('product',$product->id)}}">
+          <img src="/storage/{{$product->img_url}}" alt="{{$product->title}}">
+          <div class="precio">
+            <h4>{{$product->title}}</h4>
+            <p>${{$product->price}}</p>
+          </div>
+        </a>
+        <div class="button-cart">
+          <span class="ion-ios-cart"></span>
+          ADD TO CART
+        </div>
+      </article>
+    @endforeach
+
+
+    {{-- <article class="product">
       <img src="/img/apple.jpg" alt="apple">
       <div class="precio">
         <h4>Manzana</h4>
@@ -95,7 +123,7 @@
         <span class="ion-ios-cart"></span>
         ADD TO CART
       </div>
-    </article>
+    </article> --}}
   </section>
 
 @endsection

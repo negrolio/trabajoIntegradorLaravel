@@ -284,14 +284,14 @@ h1 {
     background-color: rgba(43, 140, 71, 0.81);
 }
 
-div.panel {
+div.panel-accordion {
     padding: 0 18px;
     display: none;
     background-color: white;
     font-size: 13px;
 }
 
-div.panel.show {
+div.panel-accordion.show {
     display: block;
 }
 
@@ -369,7 +369,7 @@ div.panel.show {
 
 }
 
-div.panel.show {
+div.panel-accordion.show {
     display: inline-block;
 }
 

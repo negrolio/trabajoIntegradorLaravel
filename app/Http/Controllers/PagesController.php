@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
 
 class PagesController extends Controller
 {
     public function showHome(){
-      return view('pages/home');
+      $products = Product::where('category', '=', 'Destacado')->get();
+      return view('pages/home')
+              ->with('products',$products);;
     }
     public function showFaq(){
       return view('pages/faq');

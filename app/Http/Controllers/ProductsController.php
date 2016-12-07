@@ -13,6 +13,19 @@ class ProductsController extends Controller
       // dd($products);
       return view('pages.products')->with('products',$products);
     }
+    public function showProductsFruits(){
+      $products = Product::where('category', '=', 'fruit')->get();
+      return view('pages.products')->with('products',$products);
+    }
+    public function showProductsVegetables(){
+      $products = Product::where('category', '=', 'vegetables')->get();
+      return view('pages.products')->with('products',$products);
+    }
+    public function showProductsCereals(){
+      $products = Product::where('category', '=', 'cereals')->get();
+      return view('pages.products')->with('products',$products);
+    }
+
 
     public function showProduct($id){
       $product = Product::find($id);

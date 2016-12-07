@@ -28,6 +28,9 @@ Route::get('/edit', 'ProductsController@showProductsToEdit')->name('edit');
 Route::get('/product-edit/{id}', 'ProductsController@showProductToEdit')->name('editProduct');
 Route::post('/product-edit/{id}', 'EditProductController@updateProduct')->name('editarProducto');
 Route::post('/erase/{id}', 'ProductsController@eraser')->name('eraser');
+Route::get('/fruits', 'ProductsController@showProductsFruits')->name('fruits');
+Route::get('/vegetables', 'ProductsController@showProductsVegetables')->name('vegetables');
+Route::get('/cereals', 'ProductsController@showProductsCereals')->name('cereals');
 
 Auth::routes();
 
